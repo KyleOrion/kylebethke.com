@@ -57,12 +57,14 @@ Edit the `.env.local` file and add your MongoDB connection string:
 
 ```bash
 MONGODB_URI=mongodb+srv://your-username:your-password@your-cluster.mongodb.net/
-NEXTAUTH_SECRET=TavnsBuJaiuoHCJKL22GIeVqdnXZ9VYeP3ZB6cRX5OA=
+NEXTAUTH_SECRET=your-generated-secret-here
 NEXTAUTH_URL=http://localhost:3004
 NEXT_PUBLIC_APP_NAME=Kyle Bethke Portfolio
 ```
 
-**Important**: Replace the `MONGODB_URI` with your actual MongoDB connection string!
+**Important**:
+- Replace the `MONGODB_URI` with your actual MongoDB connection string!
+- Generate a new `NEXTAUTH_SECRET` by running: `openssl rand -base64 32`
 
 ### Step 3: Restart the Development Server
 
