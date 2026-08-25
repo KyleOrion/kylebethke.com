@@ -1,8 +1,7 @@
 import { Inter } from 'next/font/google'
-import { CssVarsProvider } from '@mui/joy/styles'
-import CssBaseline from '@mui/joy/CssBaseline'
 import type { Metadata } from 'next'
 import Header from './components/Header'
+import Providers from './providers'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,11 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <CssVarsProvider defaultMode="dark">
-          <CssBaseline />
+        <Providers>
           <Header />
           {children}
-        </CssVarsProvider>
+        </Providers>
       </body>
     </html>
   )

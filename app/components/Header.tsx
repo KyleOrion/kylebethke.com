@@ -8,6 +8,7 @@ import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 import FolderOpenIcon from '@mui/icons-material/FolderOpen';
 import ArticleRoundedIcon from '@mui/icons-material/ArticleRounded';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 // Start simple - just Home for now!
 // We'll add more pages as you build them:
@@ -19,6 +20,7 @@ import ContactMailIcon from '@mui/icons-material/ContactMail';
 const routes = [
   { path: '/', label: 'Home', icon: HomeRoundedIcon },
   { path: '/about', label: 'About', icon: PersonRoundedIcon },
+  { path: '/dashboard/calendar', label: 'Calendar', icon: CalendarMonthIcon },
   // Uncomment these as you build the pages:
   // { path: '/projects', label: 'Projects', icon: FolderOpenIcon },
   // { path: '/blog', label: 'Blog', icon: ArticleRoundedIcon },
