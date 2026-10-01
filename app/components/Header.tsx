@@ -37,11 +37,12 @@ export default function Header() {
         position: 'sticky',
         top: 0,
         zIndex: 1100,
-        bgcolor: 'background.surface',
+        bgcolor: 'rgba(255, 255, 255, 0.8)',
         borderBottom: '1px solid',
-        borderColor: 'divider',
+        borderColor: 'rgba(0, 0, 0, 0.1)',
         p: 2,
-        backdropFilter: 'blur(8px)',
+        backdropFilter: 'blur(20px) saturate(180%)',
+        WebkitBackdropFilter: 'blur(20px) saturate(180%)',
       }}
     >
       <Stack
@@ -55,14 +56,14 @@ export default function Header() {
           <Typography
             level="h4"
             sx={{
-              fontWeight: 'bold',
-              background: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
+              fontWeight: 600,
+              color: '#1d1d1f',
               cursor: 'pointer',
+              letterSpacing: '-0.5px',
+              fontFamily: 'display',
             }}
           >
-            KB
+            Kyle Bethke
           </Typography>
         </Link>
 
